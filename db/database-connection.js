@@ -12,9 +12,7 @@ module.exports = {
 		// Connect to Heroku Postgres database
 		const client = new Client({
 			connectionString: process.env.DATABASE_URL_BOTMARK,
-			ssl: {
-				rejectUnauthorized: false
-			}
+			ssl: process.env.NODE_ENV === 'development' ? false : { rejectUnauthorized: false },
 		});
 
 		// // Connect to local Postgres database

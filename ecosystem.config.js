@@ -15,12 +15,10 @@ module.exports = {
 		env: {
 			NODE_ENV: "development",
 			PROCESS_ID: "botmark",
-			CLIENT_ID: "911410913138081863",
 		},
 		env_production: {
 			NODE_ENV: "production",
 			PROCESS_ID: "botmark",
-			CLIENT_ID: "911410913138081863",
 		}
 	}]
 };
