@@ -117,7 +117,7 @@ CREATE TABLE ranking(
 -----------------------------------------------------------------------------------------------------------------------
 
 -- INSERT BOTS
-	-- INSERT INTO bots(clientid, botname, joinlink) VALUES ('1055029666794184744', 'BotMark TAI', 'https://discord.com/api/oauth2/authorize?client_id=1055029666794184744&permissions=117760&redirect_uri=https%3A%2F%2Flocalhost%3A3000%2Fauth%2Fredirect&response_type=code&scope=bot%20applications.commands');
+	-- INSERT INTO bots(clientid, botname, joinlink) VALUES ('1055029666794184744', 'BotMark TAI', 'https://discord.com/api/oauth2/authorize?client_id=1055029666794184744&permissions=117760&redirect_uri=postgres%3A%2F%2Fpostgres%3AmJeYrnrXjMr0Gwx%40botmark-impulse.flycast%3A5432&response_type=code&scope=bot%20applications.commands');
 
 -- INSERT SERVERS
   -- BOTMARK
