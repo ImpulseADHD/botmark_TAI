@@ -71,10 +71,10 @@ CREATE TABLE users(
 	levelPts INTEGER DEFAULT(0),
 	pomodoro INTEGER[3] DEFAULT(ARRAY[25,5,15]), -- format: {work,break,long break}
 	timeZone VARCHAR(50) DEFAULT('America/Winnipeg'),
-    bookmarkCount INTEGER DEFAULT(0) NOT NULL,
+	bookmarkCount INTEGER DEFAULT(0) NOT NULL,
 	PRIMARY KEY(serverId, botId, userId),
 	FOREIGN KEY(serverId) REFERENCES servers(serverId) ON DELETE CASCADE ON UPDATE CASCADE,
-	FOREIGN KEY(botId) REFERENCES servers(botId) ON DELETE CASCADE ON UPDATE CASCADE
+    FOREIGN KEY(botId) REFERENCES servers(botId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE reminders(
